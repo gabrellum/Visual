@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F5F2 ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: 100% ;
+}
+
+header {
+    background-color: #D8798F;
+    color: #f6f3fb;
+    padding: 6px;
+   
+   display: flex;
+    height: 100px;
+   
+    }
+
+    .logo {
+        background-color: black;
+        border-radius: 5px;
+        width: 135px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30%;    
+        margin-left: 20px;    
+    }
+
+    .logo img {
+        width: 135px;
+        height: 90px;
+        
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-top: 10px;
+        margin-left: 80px;
+        font-family: los-feliz, serif;
+        font-style: normal;
+        font-weight: 400;
+        
+
+    }
+
+    
+
+.galeria {
+    width: 75%;
+    height: 470px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    margin-left: 13%;
+
+}
+
+.banners img {
+    width: 19.95%;
+    border-radius: 8px;
+}
+
+.galeria .banners {
+    display: flex;
+    gap: 5px;
+    width: 500%;
+    
+}
+
+main {
+    padding: 24px;
+    justify-items: center;
+    margin-left: 13%;
+
+    width: 75%;
+}
+
+.fakebar {
+    background-color: #F1D5DB;
+    color: #f6f3fb;
+    padding: 6px;
+   
+    text-align: left;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    justify-items:space-around;
+    list-style-type: none;
+    justify-content:space-around;
+}
+
+li{
+    font-size: 23px;
+    background-color: #61234a58;
+    border-radius: 6px;
+    padding: 3px;
+}
+.item {
+
+margin-top: 10px;
+gap: 20px;
+display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 470px;
+}
+.task {
+    border: 2px solid rgba(0, 0, 0, 0.325);
+    padding: 10px;
+    border-radius: 6px;
+   background-color: #c2c2c229;
+
+}
+
+h2 {
+    font-size: 30px;
+    margin: 6px;
+    
+}
+.containerCheckbox {
+    display: flex;
+   gap: 0.5rem;
+   font-size: 1.1rem;
+   margin-bottom: 5px;
+  }
+
+.Delete{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ae0707;
+    width: 65px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.Edit {
+    text-decoration: none;
+    color: #dd5f7d;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    width: 65px;
+    height: 30px;
+    border: none;
+    font-weight:549;
+    cursor: pointer;
+}
+script {
+    display: none;
+}
+
+.create {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #dd5f7d;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    gap:  20px;
+}
+
+#saveTask {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #61234a;
+    color: #f6f3fb;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 35px;
+    margin-left: 15px;
+   
+  
+
+}
+form {
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#newtasktittle { 
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
