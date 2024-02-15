@@ -34,11 +34,13 @@ Clique em "Salvar" para aplicar as alterações.
 Clique na caixa de seleção ao lado da tarefa concluída.
 A tarefa será movida automaticamente para a seção de tarefas finalizadas.
 
-## Referência
+## Desenvolvimento
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+O desenvolvimento do projeto foi realizado com ajuda das seguintes plataformas
+
+ - [Visual Studio Code](https://)
+ - [Xxamp](https://)
+ - [Adobe Colors](https://)
 
 
 ## Autores
