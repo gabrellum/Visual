@@ -21,11 +21,14 @@ async function renderTask() {
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.checked = task.done ? true : false ;
-        checkbox.onclick = () => {
-            doneTask(task.id)
-            console.log(task.id);
-        }
+        
+        checkbox.addEventListener("change", async () => {
+            if(checkbox.checked) {
+                doneTask(task.id)
+            }
+        })
+        checkbox.checked = task.status ? true : false ;
+        
 
         const pCheckbox = document.createElement('p');
         pCheckbox.textContent = 'Completed';
