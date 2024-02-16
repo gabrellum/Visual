@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #d8798f;
+  color: #f6f3fb;
+  padding: 6px;
+
+  display: flex;
+  height: 100px;
+}
+
+.logo {
+  background-color: black;
+  border-radius: 5px;
+  width: 135px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30%;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 135px;
+  height: 90px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 10px;
+  margin-left: 80px;
+  font-family: los-feliz, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+main {
+  padding: 24px;
+  justify-items: center;
+  margin-left: 13%;
+
+  width: 75%;
+}
+
+.fakebar {
+  background-color: #f1d5db;
+  color: #f6f3fb;
+  padding: 6px;
+
+  text-align: left;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  justify-items: space-around;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+li {
+  font-size: 23px;
+  background-color: #61234a58;
+  border-radius: 6px;
+  padding: 3px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-size: 100%;
+
+  background: rgb(223, 223, 223);
+  background: linear-gradient(
+    180deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(254, 212, 231, 1) 59%,
+    rgba(218, 135, 162, 1) 100%
+  );
+}
+
+main {
+  height: 82.5vh;
+}
+
+input {
+  border: 1px solid rgba(17, 17, 17, 0.349);
+  border-radius: 3px;
+  height: 20px;
+}
+
+label {
+  margin-top: 4px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+}
+form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+}
+
+.createuserbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 399px;
+  margin-left: 35%;
+  background-color: #f6f3fb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 100px;
+ 
+}
+
+#username {
+  width: 184px;
+}
+
+#password {
+  width: 184px;
+  
+}
+
+#email {
+  width: 184px;
+ 
+}
+
+#saveUser {
+  width: 260px;
+  margin-top: 20px;
+  height: 30px;
+  background-color: #612330;
+  color: white;
+  font-size: 17px;
+}

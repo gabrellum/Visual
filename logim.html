@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -16,14 +17,18 @@
     <div class="fakebar">
             
         <ul>
-            <li><a >🏠Home</a></li>
+            <li><a href="http://localhost:3000/">🏠Home</a></li>
             <li><a >🔍About</a></li>
             <li><a >📟Contact</a></li>
-            <li><a >🚀Profile</a></li>
+            <li><a >🚀Login</a></li>
         </ul>
     </div>
     <main>
         <div class="createuserbox">
+            <div class="createform">
+            <h2> Create account</h2>
+            <p>Start your 30 day free trial and cancel any time</p>
+            </div>
             <form action="">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username">
@@ -32,13 +37,17 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
                 <div>
-                <button id="saveUser" type="submit">Create</button>
+                <button id="saveUser">Create</button>
             </div>
             </form>
+            <div class="logbar">
+            <p>Already have an account? </p> 
+            <a href="">Log in</a>
+        </div>
         </div>
 
         </div>
     </main>
-    
+    <script type="module" src="./js/registrar.js"></script>
 </body>
 </html>
