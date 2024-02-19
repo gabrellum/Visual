@@ -130,11 +130,20 @@ h2 {
     margin: 6px;
     
 }
+.task-description {
+    font-size: 20px;
+    padding: 6px;
+    color: #757575;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
 .containerCheckbox {
     display: flex;
    gap: 0.5rem;
    font-size: 1.1rem;
    margin-bottom: 5px;
+   font-size: 20px;
   }
 
 .Delete{
@@ -200,4 +209,119 @@ form {
 a {
     text-decoration: none;
    color: white;
+}
+
+.checked {
+accent-color: green;
+mix-blend-mode: multiply;
+
+}
+
+.green {
+    
+    text-decoration: line-through;
+}
+
+.completed {
+    color: green;
+    
+}
+
+.card {
+    padding: 4.8rem 4.4rem 6.4rem;
+    background: white;
+    max-width: 47.8rem;
+    margin-inline: auto;
+ 
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+    border-radius: .6rem;
+    display: unset;
+}
+ 
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+ 
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.148);
+ 
+    display: grid;
+    place-content: center;
+ 
+    opacity: 0;
+    visibility: hidden;
+   scroll-snap-stop: always;
+  
+}
+ 
+.modal {
+    position: relative;
+}
+ 
+.modal button {
+    background: none;
+    border: none;
+ 
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+ 
+    cursor: pointer;
+ 
+    transition: transform .3s;
+}
+ 
+.modal button:hover {
+    transform: scale(1.1);
+}
+
+#input-title {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+
+#input-description {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+
+.modal.card {
+    display: flex;
+    gap: 21px;
+}
+
+
+#saveButton {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #61234a;
+    color: #f6f3fb;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+#titleStyle {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+#descriptionStyle {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
 }

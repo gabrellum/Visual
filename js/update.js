@@ -3,8 +3,8 @@ import { getTasks } from "./getTasks.js"
 
 export function updateTask(taskId) {
 
-    const title = document.getElementById('taskTitle').value
-    const description = document.getElementById('taskDescription').value
+    const title = document.getElementById('input-title').value
+    const description = document.getElementById('input-description').value
     
     if(title === "") {
         alert("Preencha o campo de título")

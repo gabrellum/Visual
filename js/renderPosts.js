@@ -1,7 +1,8 @@
 import { doneTask } from "./checkbox.js";
 import { deleteTask } from "./delete.js";
 import { getTasks } from "./getTasks.js";
-import { updateTask } from "./update.js";
+import { Modal } from "./modal.js";
+import { updateTask } from "./update.js"; 
 
 const page = document.querySelector('div.page');
 
@@ -15,19 +16,39 @@ async function renderTask() {
 
         const taskDescription = document.createElement('p');
         taskDescription.textContent = task.description;
+        taskDescription.classList.add('task-description');
+
 
         const containerCheckbox = document.createElement('div');
         containerCheckbox.classList.add('containerCheckbox');
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
+
+        checkbox.onclick = () => {
+                doneTask(task.id)
+                checkbox.classList.toggle('checked')
+                taskDescription.classList.toggle('green');
+                taskTittle.classList.toggle('completed');
+             }
         
-        checkbox.addEventListener("change", async () => {
+        
+      /*   checkbox.addEventListener("change", async () => {
             if(checkbox.checked) {
                 doneTask(task.id)
-            }
+                checkbox.classList.toggle('checked');
+
+            } 
         })
+        */
+
         checkbox.checked = task.status ? true : false ;
+
+        if(task.status === 1) {
+            checkbox.classList.toggle('checked');
+            taskDescription.classList.toggle('green');
+            taskTittle.classList.toggle('completed');
+        }
         
 
         const pCheckbox = document.createElement('p');
@@ -40,7 +61,7 @@ async function renderTask() {
         aEdit.textContent = 'Editar';
         aEdit.classList.add('Edit');
         aEdit.onclick  =  () => {
-            updateTask(task.id)
+           displayContent(task)
         }
 
         const aDelete = document.createElement('button');
@@ -72,6 +93,21 @@ async function renderTask() {
 
     })
 
+}
+function displayContent(task) {
+    const title = task.title
+    const description = task.description
+    const taskID = task.id
+   
+    Modal.title.placeholder = title
+    Modal.description.placeholder = description
+
+    Modal.saveButton.onclick = () => {
+        updateTask(taskID)
+        Modal.close()
+    }
+   
+    Modal.open()
 }
 
 renderTask();

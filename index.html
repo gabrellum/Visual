@@ -17,7 +17,7 @@
             
         <ul>
             <li><a  >🏠Home</a></li>
-            <li><a >🔍About</a></li>
+            <li><a href="http://127.0.0.1:5500/frontend/aboutus.html">🔍About</a></li>
             <li><a >📟Contact</a></li>
             <li><a href="http://127.0.0.1:5500/frontend/logim.html" >🚀Login</a></li>
         </ul>
@@ -47,6 +47,22 @@
         <div class="page">
             
         </div>
+        <div class="modal-wrapper">
+            <div class="modal card">
+                <div class="title">
+                    <label for="input-title" id="titleStyle">Title</label>
+                    <input type="text" name="input-title" id="input-title">
+                </div>
+                <div>
+                    <label for="input-description" id="descriptionStyle">Description</label>
+                    <input type="text" name="input-description" id="input-description">
+                </div>
+              
+                <button class="close">&times;</button>
+
+            </div>
+            <button type="button" id="saveButton" >Salvar</button>
+          </div>
     </main>
     <script type="module" src="./js/renderPosts.js"></script>
     <script type="module" src="./js/fechApi.js"></script>
